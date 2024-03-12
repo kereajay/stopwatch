@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+          margin: auto;
+          text-align: center;
+          margin-top: 10%;
+        }
+        #display{
+            font-size: 2cm;
+        }
+        button{
+            padding: 2%;
+            width: 200px;
+            font-size: larger;
+            border-radius: 20px;
+            background: linear-gradient(to left,rgb(255,95,109),rgb(255, 195, 113));
+            border: 2px solid white;
+        }
+        #stop{
+            background: linear-gradient(to right,rgb(191, 240, 152),rgb(111, 214, 255));
+        }
+        #reset{
+            background: linear-gradient(to right,rgb(161, 196, 253),rgb(194, 233, 251));
+        }
+       #start:hover{
+        cursor:pointer;
+        opacity: 0.7;
+       }
+       #stop:hover{
+        cursor:pointer;
+        opacity: 0.7;
+       }
+       #reset:hover{
+        cursor:pointer;
+        opacity: 0.7;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="display">00:00:00:00</div>
+        <br>
+        <div id="handles">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
